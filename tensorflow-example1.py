@@ -5,6 +5,8 @@ import numpy as np
 # In Google Colab, can change runtime to GPU if desired. If a TensorFlow
 # operation has both CPU and GPU implementations, by default the GPU device
 # is prioritized when the operation is assigned.
+#note install mnist database by using !pip install tensorflow-datasets
+#for loading the data type mnist.load_data()
 device = tf.config.get_visible_devices()
 print(device)
 
@@ -37,7 +39,7 @@ input_shape = (28, 28, 1)
 
 # Load the MNIST dataset
 mnist = tf.keras.datasets.mnist
-(x_train, y_train), (x_test, y_test) = mnist.load_data(mnist-dataset)
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
 
 # The scaled mean and standard deviation of the MNIST dataset (precalculated)
 data_mean = 0.1307
