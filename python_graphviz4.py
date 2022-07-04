@@ -14,7 +14,6 @@
 #between them. Next, I fill the nodes for subdirectory with yellow color and the files with orange
 #color. At the same time, I ignore the hidden folders whose name starts with a ..
 
-
 import pydot
 import os
 from IPython.display import Image, display
@@ -36,8 +35,8 @@ G.add_node(node)
 for root, dirs, files in os.walk(rootDir):
     
     #Ignore hidden files and folder
-    if root==rootDir or (root.split("/")[6].startswith(".") == False):
-       
+   ## if root==rootDir or (root.split("/")[6].startswith(".") == False):
+    if root==rootDir : 
         for subdir in dirs:
             
             #Ignore hidden folder
@@ -68,20 +67,4 @@ im = Image(G.create_jpeg())
 display(im)
 
 #Save the image in jpeg format
-G.write_jpeg("output/folder_tree.jpeg")
-
-
-#Pydot package
-#The pydot package is an interface to Graphviz. It is written in pure Python,
-#and it can parse and dump into the DOT language used by Graphviz. A folder tree structure in a computer comprising
-#of a directory, sub-directory, files, etc. is also an example of a directed graph. In the following section, 
-#I am going to explain how the pydot package can be used to get the folder tree structure.
-
-#Folder tree using Pydot package
-#I start with creating a directed graph object called G. The os module in Python provides a portable way of 
-#using operating system-dependent functionalities. os.getcwd() returns the current working directory including 
-#the path, which I assign as rootDir. From the rootDir, I get the name of the directory only (graph_visualisation_basics)
-#and pass it as currentDir. I add a node for currentDir and fill it with green color. By using a for loop,
-#I define the nodes for each subdirectory and file and add edges between them. Next, 
-#I fill the nodes for subdirectory with yellow color and the files with orange color.
-#At the same time, I ignore the hidden folders whose name starts with a
+G.write_jpeg("folder_tree.jpeg")
