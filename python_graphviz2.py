@@ -1,5 +1,5 @@
 import graphviz
-f = graphviz.Digraph(filename = 'output/colorful organogram 1.gv')
+f = graphviz.Digraph(filename = 'colorful organogram 1.gv')
 names = ["A","B","C","D","E","F","G","H"]
 positions = ["CEO","Team A Lead","Team B Lead", "Staff A","Staff B", "Staff C", "Staff D", "Staff E"]
 colors = ["black", "blue", "red", "blue", "blue", "red", "red", "red"]
@@ -14,4 +14,4 @@ f.edge("B","D", color = "blue"); f.edge("B","E", color = "blue")
 #Team B 
 f.edge("C","F", color = "red"); f.edge("C","G", color = "red"); f.edge("C","H", color = "red")   
     
-f
+f.view()

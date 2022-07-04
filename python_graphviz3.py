@@ -14,5 +14,7 @@ f.edge("A","B"); f.edge("A","C")   #CEO to Team Leads
 f.edge("B","D"); f.edge("B","E")   #Team A relationship
 f.edge("C","F"); f.edge("C","G"); f.edge("C","H")   #Team B relationship
     
-print(f)
+f.view()
+
+
 
