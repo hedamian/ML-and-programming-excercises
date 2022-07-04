@@ -1,0 +1,17 @@
+digraph {
+	A [label=CEO color=black]
+	B [label="Team A Lead" color=blue]
+	C [label="Team B Lead" color=red]
+	D [label="Staff A" color=blue]
+	E [label="Staff B" color=blue]
+	F [label="Staff C" color=red]
+	G [label="Staff D" color=red]
+	H [label="Staff E" color=red]
+	A -> B [label=A color=blue]
+	A -> C [label=B color=red]
+	B -> D [color=blue]
+	B -> E [color=blue]
+	C -> F [color=red]
+	C -> G [color=red]
+	C -> H [color=red]
+}
