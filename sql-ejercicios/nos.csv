@@ -1,0 +1,4 @@
+EmpleadoFamiliaId,EmpleadoId,EmpleadoFamiliaVive,EmpleadoFamiliaNombreCompleto,EmpleadoFamiliaOcupacion,EmpleadoFamiliaDomicilio,EmpleadoFamiliaDependen,EmpleadoFamiliaFechaNacimiento,EmpleadoFamiliaSexo,ParentescoId,EmpleadoFamiliaDocumentoConsec
+478,1062,1,anna,empresaria,snuggles,0,1970-05-12 00:00:00.000,2,18,0
+480,1062,1,manuel,abogado,snuggles,0,1970-05-13 00:00:00.000,1,18,0
+481,1062,1,anakin,jedi alumno,parsec,0,1982-06-24 00:00:00.000,1,18,0
