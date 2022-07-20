@@ -1,5 +1,5 @@
 ----125 - Procedimientos almacenados (información)
-
+use ejercicios
 --Los procedimientos almacenados son objetos, así que para obtener información de ellos 
 --pueden usarse los siguientes procedimientos almacenados del sistema y las siguientes tablas:
 
